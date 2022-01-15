@@ -1,8 +1,27 @@
+*,
+*:before,
+*:after {
+    margin:0;
+    box-sizing:border-box;
+}
+
+header {
+    text-align:center;
+}
 .container {
     display:flex;
-    align-items:center;
     justify-content:center;
+    flex-direction: column;
+    border:5px solid red; 
+    margin:auto;
     height:100vh;
+}
+
+.gameboard-container {
+    display:flex;
+    border:5px solid red;
+    justify-content:center;
+    margin:0 auto;
 }
 
 .game-board {
@@ -10,6 +29,8 @@
     grid-template-columns: repeat(3, 1fr);
 }
 
-.boardCell {
+.square {
     border:3px solid black;
-    padding:100px;
+    padding:80px;
+    font-size:2rem;
+}

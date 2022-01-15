@@ -1,6 +1,7 @@
 createGameBoard(3);
 let gameState = Array.from(document.querySelectorAll('.boardCell')); //forms Array from board
 let currentPlayerMarker = 'x';
+let currentPlayer = 'player1';
 
 //create Gameboard
 function createGameBoard(n){
@@ -39,20 +40,7 @@ function createPlayer(name) {
 
 //Game Logic - 
 const gameLogic = {
-    /* currentPlayer: {
-            currentTurn: 'x',
-            switchTurns(){
-                if (currentTurn === 'x') {
-            return currentTurn = 'o';
-        } else {
-            return currentTurn = 'x';
-        }
-    };
-            }
-      */  
-    }
     playGame() {
-
     },
     checkForWinner () { // Checks all winning combinations and returns winner or draw
         if (gameState[0] === gameState[1] && gameState [1]=== gameState[2]) {
